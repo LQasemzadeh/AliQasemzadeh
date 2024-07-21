@@ -20,12 +20,12 @@ const Hero = () => {
         </div>
         <div className="flex-1">
           <div className="md:text-left text-center">
-            <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
+            <h1 className="md:text-4xl text-2xl md:leading-normal leading-10 text-white font-bold">
             <span className="text-cyan-600 md:text-5xl text-4xl">
               Hello!
               <br/>
             </span>
-              My Name is <span>Ali Qasemzadeh</span>
+               <span className="md:text-3xl text-3xl">My Name is Ali Qasemzadeh</span>
             </h1>
             <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
               Fullstack Developer
@@ -37,8 +37,7 @@ const Hero = () => {
                       key={icon}
                       className="text-gray-600 hover:text-white cursor-pointer "
                   >
-                    <FaGithub name={icon} />
-                    <GrInstagram name={icon} />
+                    <ion-icon name={icon}></ion-icon>
                   </div>
               ))}
             </div>
